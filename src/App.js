@@ -59,7 +59,7 @@ class App extends Component {
   }
 
   updateComponent=()=> {
-     var urlBase = "https://api.unsplash.com/search/photos?client_id=cb78d5b83a46759609c66673611dc3942a17f82c5deb0b610f7829e78dccabf4&page=2&query=";
+     var urlBase = "https://api.unsplash.com/search/photos?page=2&query="; //NEED TO ADD AN API KEY HERE.
      var userQuery = this.props.query;
      var fullQuery = urlBase + userQuery;
     fetch(
